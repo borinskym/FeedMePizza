@@ -5,3 +5,7 @@
 .DS_Store
 /build
 /captures
+FeedMePizza.iml
+.idea/.name
+.idea/gradle.xml
+*.xml
