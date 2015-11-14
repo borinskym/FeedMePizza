@@ -21,6 +21,11 @@
             android:label="@string/title_activity_im_picky"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".Toppings_Page"
+            android:label="@string/title_activity_toppings__page"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
