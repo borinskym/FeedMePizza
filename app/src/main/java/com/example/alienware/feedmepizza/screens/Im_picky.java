@@ -1,4 +1,4 @@
-package com.example.alienware.feedmepizza;
+package com.example.alienware.feedmepizza.screens;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.alienware.feedmepizza.R;
 
 public class Im_picky extends AppCompatActivity {
 
@@ -37,6 +39,7 @@ public class Im_picky extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Toppings_Page.class);
+               intent.putExtra("place","TwoForOne toppings");
                 startActivityForResult(intent, 0);
             }
         });
@@ -49,8 +52,11 @@ public class Im_picky extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Toppings_Page.class);
+                intent.putExtra("place","dominos toppings");
                 startActivityForResult(intent, 0);
             }
+
+
         });
 
     }
@@ -61,6 +67,7 @@ public class Im_picky extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Toppings_Page.class);
+                intent.putExtra("place","Hut toppings");
                 startActivityForResult(intent, 0);
             }
         });

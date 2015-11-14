@@ -1,4 +1,4 @@
-package com.example.alienware.feedmepizza;
+package com.example.alienware.feedmepizza.screens;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.alienware.feedmepizza.R;
+import com.example.alienware.feedmepizza.screens.Im_picky;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         configureImageButton();
         configureIAmPickyButton();
+        String a;
     }
 
     private void configureIAmPickyButton() {

@@ -8,7 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_toppings__page"
-    tools:context="com.example.alienware.feedmepizza.Toppings_Page">
+    tools:context="com.example.alienware.feedmepizza.screens.Toppings_Page">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,5 +19,16 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:text="Large Text"
+        android:id="@+id/textView3"
+        android:layout_marginTop="119dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
