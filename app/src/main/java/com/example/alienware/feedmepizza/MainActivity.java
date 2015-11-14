@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         configureImageButton();
+        configureIAmPickyButton();
+    }
+
+    private void configureIAmPickyButton() {
+        Button iAmPickyButton = (Button)findViewById(R.id.i_am_picky_button);
+        iAmPickyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Im_picky.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
 
     private void configureImageButton() {
