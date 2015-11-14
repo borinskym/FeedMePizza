@@ -27,6 +27,32 @@ public class Im_picky extends AppCompatActivity {
             }
         });
         configurePizzaHutButton();
+        configureDominosButton();
+        configureTwoforoneButton();
+    }
+
+    private void configureTwoforoneButton() {
+        Button TwoforoneButton = (Button)findViewById(R.id.twoForOne) ;
+        TwoforoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Toppings_Page.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
+    }
+
+    private void configureDominosButton() {
+        Button DominosButton = (Button)findViewById(R.id.dominos) ;
+        DominosButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Toppings_Page.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
     }
 
     private void configurePizzaHutButton() {
