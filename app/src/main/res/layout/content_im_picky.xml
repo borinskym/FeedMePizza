@@ -10,30 +10,39 @@
     tools:showIn="@layout/activity_im_picky"
     tools:context="com.example.alienware.feedmepizza.screens.Im_picky">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="pizza hut"
-        android:id="@+id/Hut"
+        android:id="@+id/hut"
+        android:src="@mipmap/hut_logo5"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="pick a place"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="domino&apos;s"
         android:id="@+id/dominos"
-        android:layout_below="@+id/Hut"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:src="@mipmap/dominos_logo"
+        android:layout_below="@+id/hut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="two for one"
-        android:id="@+id/twoForOne"
+        android:id="@+id/sbarro"
+        android:src="@mipmap/sbarro_logo"
         android:layout_below="@+id/dominos"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

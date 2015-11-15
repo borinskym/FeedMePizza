@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.alienware.feedmepizza.R;
 
@@ -20,26 +21,18 @@ public class Im_picky extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         configurePizzaHutButton();
         configureDominosButton();
         configureTwoforoneButton();
     }
 
     private void configureTwoforoneButton() {
-        Button TwoforoneButton = (Button)findViewById(R.id.twoForOne) ;
+        ImageButton TwoforoneButton = (ImageButton)findViewById(R.id.sbarro) ;
         TwoforoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Toppings_Page.class);
-               intent.putExtra("place","TwoForOne toppings");
+               intent.putExtra("place","sbarro toppings");
                 startActivityForResult(intent, 0);
             }
         });
@@ -47,7 +40,7 @@ public class Im_picky extends AppCompatActivity {
     }
 
     private void configureDominosButton() {
-        Button DominosButton = (Button)findViewById(R.id.dominos) ;
+        ImageButton DominosButton = (ImageButton)findViewById(R.id.dominos) ;
         DominosButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +55,7 @@ public class Im_picky extends AppCompatActivity {
     }
 
     private void configurePizzaHutButton() {
-        Button HutButton = (Button)findViewById(R.id.Hut) ;
+        ImageButton HutButton = (ImageButton) findViewById(R.id.hut) ;
         HutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
