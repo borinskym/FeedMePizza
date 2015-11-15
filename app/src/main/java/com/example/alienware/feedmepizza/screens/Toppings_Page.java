@@ -30,5 +30,4 @@ public class Toppings_Page extends AppCompatActivity {
         TextView nameView = (TextView) findViewById(R.id.textView3);
         nameView.setText(getIntent().getExtras().getString("place"));
     }
-
 }
