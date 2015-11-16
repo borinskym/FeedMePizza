@@ -21,5 +21,8 @@ public class Toppings_Page extends AppCompatActivity {
 
         TextView nameView = (TextView) findViewById(R.id.textView3);
         nameView.setText(getIntent().getExtras().getString("place"));
+        String toppingsToShow = getIntent().getExtras().getString("toppings");
+        TextView showToppings = (TextView) findViewById(R.id.showingToppings);
+        showToppings.setText(toppingsToShow);
     }
 }
