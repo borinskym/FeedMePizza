@@ -21,7 +21,21 @@ public class MainActivity extends AppCompatActivity {
 
         configureImageButton();
         configureIAmPickyButton();
-        String a;
+        configureSettingsButton();
+    }
+
+    private void configureSettingsButton() {
+        ImageButton imgButton = (ImageButton)findViewById(R.id.settingsButton);
+        imgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Im_picky.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.right_slide_in,R.anim.right_slide_out);
+
+
+            }
+        });
     }
 
     private void configureIAmPickyButton() {
@@ -31,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),Im_picky.class);
                 startActivityForResult(intent,0);
+
             }
         });
     }
