@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_im_picky">Im_picky</string>
     <string name="title_activity_toppings__page">Toppings_Page</string>
+    <string name="opendrawer">Open</string>
+    <string name="closedrawer">Close</string>
 </resources>
