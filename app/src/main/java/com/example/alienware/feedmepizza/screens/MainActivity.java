@@ -15,23 +15,25 @@ import android.widget.ListView;
 
 import com.example.alienware.feedmepizza.R;
 import com.example.alienware.feedmepizza.screens.Im_picky;
-
 public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private DrawerLayout drawerLayout;
     private ListView navList;
-    private ActionBar actionBar;
+    private android.support.v7.app.ActionBar actionBar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //setTheme(android.R.style.Theme_Holo);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initializeSettingsBar();
-        actionBar = getSupportActionBar();
-        actionBar.setDefaultDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+       getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        setContentView(R.layout.activity_main);
       //  configureImageButton();
        // configureIAmPickyButton();
        // configureSettingsButton();
@@ -91,10 +93,11 @@ public class MainActivity extends AppCompatActivity {
 //        });
 //    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+//    @Override
+   public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
