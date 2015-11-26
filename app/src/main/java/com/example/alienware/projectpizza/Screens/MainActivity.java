@@ -23,8 +23,22 @@ public class MainActivity extends AppCompatActivity {
 
         configureImageButton();
         configureIAmPickyButton();
+        //configureSettingButton();
         String a;
     }
+
+    /*private void configureSettingButton() {
+        Button settingsButton = (Button)findViewById(R.id.settings_button);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Settings.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
+
+    }*/
 
     private void configureIAmPickyButton() {
         Button iAmPickyButton = (Button)findViewById(R.id.i_am_picky_button);
