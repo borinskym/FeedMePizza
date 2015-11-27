@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private DrawerLayout drawerLayout;
     private ListView navList;
-    private android.support.v7.app.ActionBar actionBar;
 
 
     @Override
@@ -28,16 +28,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initializeSettingsBar();
-       getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
 
-        setContentView(R.layout.activity_main);
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle("FEED MY PIZZA");
+        actionBar.setDisplayUseLogoEnabled(false);
+
+
+        initializeSettingsBar();
+
+        //setContentView(R.layout.activity_main);
       //  configureImageButton();
        // configureIAmPickyButton();
        // configureSettingsButton();
     }
+
 
     private void initializeSettingsBar() {
 
@@ -46,15 +54,14 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.opendrawer,R.string.closedrawer);
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
 
-
     }
 
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState){
-        super.onPostCreate(savedInstanceState);
-        actionBarDrawerToggle.syncState();
-        
-    }
+    //    @Override
+    //    protected void onPostCreate(Bundle savedInstanceState){
+    //        super.onPostCreate(savedInstanceState);
+    //        actionBarDrawerToggle.syncState();
+    //
+    //    }
 
 //    private void configureSettingsButton() {
 //        ImageButton imgButton = (ImageButton)findViewById(R.id.settingsButton);
@@ -110,7 +117,12 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            if(drawerLayout.isDrawerOpen(navList)){
+                drawerLayout.closeDrawer(navList);
+            }
+            else{
+                drawerLayout.openDrawer(navList);
+            }
         }else if(id == android.R.id.home) {
                 if(drawerLayout.isDrawerOpen(navList)){
                     drawerLayout.closeDrawer(navList);
