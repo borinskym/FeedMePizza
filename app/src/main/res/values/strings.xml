@@ -22,6 +22,7 @@
     <string name="draghere">Drag here</string>
     <string name="title_activity_choose_your_toppings">ChooseYourToppings</string>
     <string name="toppingsToShow"></string>
+    <string name="title_activity_settings">Settings</string>
 
 
 </resources>
