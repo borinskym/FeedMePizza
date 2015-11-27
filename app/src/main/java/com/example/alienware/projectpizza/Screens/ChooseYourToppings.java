@@ -28,7 +28,6 @@ public class ChooseYourToppings extends AppCompatActivity {
                 k = i;
                 for(int j = 0; order.charAt(k) == newTopping.charAt(j) ; j++){
                     k++;
-
                     if (j == newTopping.length() - 1){
                         return true;
                     }
@@ -125,7 +124,4 @@ public class ChooseYourToppings extends AppCompatActivity {
             return true;
         }
     };
-
-
-
 }
