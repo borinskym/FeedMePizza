@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         configureImageButton();
         configureIAmPickyButton();
         configureSettingButton();
-        String a;
-    }
+        }
 
     private void configureSettingButton() {
         Button settingsButton = (Button)findViewById(R.id.settings_button);
