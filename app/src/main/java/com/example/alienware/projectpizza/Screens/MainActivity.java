@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         configureImageButton();
         configureIAmPickyButton();
-        //configureSettingButton();
+        configureSettingButton();
         String a;
     }
 
-    /*private void configureSettingButton() {
+    private void configureSettingButton() {
         Button settingsButton = (Button)findViewById(R.id.settings_button);
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    }*/
+    }
 
     private void configureIAmPickyButton() {
         Button iAmPickyButton = (Button)findViewById(R.id.i_am_picky_button);
