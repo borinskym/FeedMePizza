@@ -19,10 +19,34 @@
     <string name="beef">beef</string>
     <string name="anchovy">anchovy</string>
     <string name="yourToppingsAre">your toppings are:</string>
+    <string name="picked">drag the toppings to the pizza</string>
     <string name="draghere">Drag here</string>
     <string name="title_activity_choose_your_toppings">ChooseYourToppings</string>
     <string name="toppingsToShow"></string>
     <string name="title_activity_settings">Settings</string>
-
-
+    <string name="title_activity_topping_placement">ToppingPlacement</string>
+    <string name="top1">top1</string>
+    <string name="top2">top2</string>
+    <string name="top3">top3</string>
+    <string name="top4">top4</string>
+    <string name="top5">top5</string>
+    <string name="top6">top6</string>
+    <string name="top7">top7</string>
+    <string name="top8">top8</string>
+    <string name="top9">top9</string>
+    <string name="top10">top10</string>
+    <string name="top11">top11</string>
+    <string name="top12">top12</string>
+    <string name="top13">top13</string>
+    <string name="top14">top14</string>
+    <string name="top15">top15</string>
+    <string name="top16">top16</string>
+    <string name="top17">top17</string>
+    <string name="top18">top18</string>
+    <string name="top19">top19</string>
+    <string name="top20">top20</string>
+    <string name="top21">top21</string>
+    <string name="top22">top22</string>
+    <string name="top23">top23</string>
+    <string name="top24">top24</string>
 </resources>

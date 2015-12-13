@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         imgButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ChooseYourToppings.class);
+                Intent intent = new Intent(v.getContext(), ToppingPlacement.class);
                 startActivityForResult(intent, 0);
             }
         });
